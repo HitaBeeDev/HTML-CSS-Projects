@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Documentation on React.js</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="navbar-header">Documentation on React.js</header>
+      <ul>
+        <li>
+          <a href="#Introduction" class="nav-link nav-style">Introduction</a>
+        </li>
+        <hr />
+
+        <li>
+          <a
+            href="#Different_Thinking_in_JavaScript_and_React"
+            class="nav-link nav-style"
+            >Different Thinking in JavaScript and React</a
+          >
+        </li>
+        <hr />
+
+        <li>
+          <a
+            href="#JavaScript_Fundamentals_for_React.js"
+            class="nav-link nav-style"
+            >JavaScript Fundamentals for React.js</a
+          >
+        </li>
+        <hr />
+
+        <li>
+          <a href="#Components" class="nav-link nav-style">Components</a>
+        </li>
+        <hr />
+
+        <li>
+          <a href="#State_and_Props" class="nav-link nav-style"
+            >State and Props</a
+          >
+        </li>
+        <hr />
+
+        <li>
+          <a href="#JSX" class="nav-link nav-style">JSX</a>
+        </li>
+        <hr />
+
+        <li>
+          <a href="#Lifecycle_Methods" class="nav-link nav-style"
+            >Lifecycle Methods</a
+          >
+        </li>
+        <hr />
+
+        <li>
+          <a href="#React_Hooks" class="nav-link nav-style">React Hooks</a>
+        </li>
+        <hr />
+
+        <li>
+          <a href="#Conditional_Rendering" class="nav-link nav-style"
+            >Conditional Rendering</a
+          >
+        </li>
+        <hr />
+
+        <li>
+          <a href="#Lists_and_Keys" class="nav-link nav-style"
+            >Lists and Keys</a
+          >
+        </li>
+        <hr />
+
+        <li>
+          <a href="#React_Router" class="nav-link nav-style">React Router</a>
+        </li>
+        <hr />
+
+        <li>
+          <a href="#Redux" class="nav-link nav-style">Redux</a>
+        </li>
+        <hr />
+
+        <li>
+          <a href="#Conclusion" class="nav-link nav-style">Conclusion</a>
+        </li>
+        <hr />
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header id="main-section-header">Introduction</header>
+        <p>
+          React is a popular JavaScript library for building user interfaces. It
+          was developed by Facebook and released to the public in 2013. Since
+          then, it has become one of the most widely used front-end libraries,
+          with many companies and developers using it to build robust, scalable,
+          and efficient web applications.
+        </p>
+        <p>
+          One of the key features of React is its component-based architecture,
+          which allows developers to create reusable UI elements that can be
+          used throughout an application. This makes it easier to maintain and
+          update the application, as changes made to one component can be
+          automatically reflected in all instances of that component.
+        </p>
+        <p>
+          Another advantage of React is its virtual DOM, which allows it to
+          efficiently render changes to the UI without having to update the
+          entire page. This makes React applications fast and responsive, even
+          when dealing with large amounts of data.
+        </p>
+
+        <p>
+          In this document, we will explore the different concepts and
+          techniques involved in building React applications. We will start with
+          an overview of the unique way of thinking required when developing
+          with React, and then cover important topics such as components, state
+          and props, JSX, and more.
+        </p>
+        <p>
+          We will also compare React to other popular JavaScript frameworks, and
+          explain why React has become the go-to choice for many developers. By
+          the end of this document, you will have a solid understanding of React
+          and be ready to start building your own React applications.
+        </p>
+      </section>
+
+      <section
+        id="Different_Thinking_in_JavaScript_and_React"
+        class="main-section"
+      >
+        <header id="main-section-header">
+          Different Thinking in JavaScript and React
+        </header>
+        <p>
+          Developing in React requires a different mindset than traditional
+          JavaScript programming due to its component-based architecture.
+          <br />
+          In traditional JavaScript programming, the focus is on imperative
+          programming, where code directly manipulates the DOM to change UI
+          elements.
+          <br />
+          React, on the other hand, uses a declarative approach. This means that
+          instead of manipulating the DOM directly, developers define how the UI
+          should look at any given moment in response to changes in data.
+          <br />
+          React then takes care of updating the actual DOM to match the defined
+          UI state. This approach can be challenging at first, but it ultimately
+          leads to cleaner and more maintainable code.
+          <br />
+          Additionally, the use of reusable components in React encourages a
+          modular approach to development, making it easier to manage complex
+          UIs.
+        </p>
+      </section>
+      <section id="JavaScript_Fundamentals_for_React.js" class="main-section">
+        <header id="main-section-header">
+          JavaScript Fundamentals for React.js
+        </header>
+        <p>
+          To effectively learn and use React, it's important to have a solid
+          foundation in JavaScript fundamentals. Here are some of the most
+          important topics to focus on:
+        </p>
+        <ol class="list">
+          <li>
+            Variables: Understanding how to declare and use variables is
+            essential for writing effective React code.
+          </li>
+
+          <li>
+            Data Types: Familiarity with data types such as strings, numbers,
+            booleans, and objects is important for working with data in React.
+          </li>
+
+          <li>
+            Functions: Knowledge of functions, including how to define and call
+            them, is crucial for building React components and handling user
+            interactions.
+          </li>
+
+          <li>
+            Arrays and Objects: Arrays and objects are important data structures
+            used in React applications, so understanding how to work with them
+            is essential.
+          </li>
+
+          <li>
+            Control Structures: Control structures like if/else statements and
+            for/while loops are fundamental programming concepts that are
+            necessary for building React applications.
+          </li>
+        </ol>
+      </section>
+      <section id="Components" class="main-section">
+        <header id="main-section-header">Components</header>
+        <p>
+          Components are the building blocks of React applications. They are
+          reusable UI elements that can be combined together to create more
+          complex user interfaces. A component can be thought of as a
+          self-contained module that has its own logic, state, and rendering.<br />
+          Components can be functional or class-based, and can be nested inside
+          other components to create a tree-like structure. By breaking down an
+          application into smaller, more manageable components, developers can
+          build scalable and maintainable user interfaces with React.
+        </p>
+      </section>
+
+      <section id="State_and_Props" class="main-section">
+        <header id="main-section-header">State and Props</header>
+        <p>
+          State and props are two important concepts in React that allow
+          components to manage and share data.
+          <br />
+          State is an internal data storage mechanism that allows a component to
+          keep track of its own data and update it when necessary. State is
+          typically used for data that can change over time, such as user input
+          or server responses. When the state of a component changes, React
+          automatically re-renders the component to reflect the updated state.
+          <br />
+          Props, short for properties, are data that is passed from a parent
+          component to a child component. Props allow components to communicate
+          with each other and share data in a controlled manner. Props are
+          read-only and cannot be modified by the child component.
+        </p>
+      </section>
+
+      <section id="JSX" class="main-section">
+        <header id="main-section-header">JSX</header>
+        <p>
+          JSX (JavaScript XML) is an extension to JavaScript that allows
+          developers to write HTML-like syntax in their JavaScript code. It is a
+          key feature of React, as it allows developers to define their user
+          interfaces in a more declarative way.
+          <br />
+          With JSX, developers can write code that looks like HTML, but is
+          actually JavaScript. This makes it easier to create and manage complex
+          UI elements, as everything is contained within a single file.
+        </p>
+      </section>
+
+      <section id="Lifecycle_Methods" class="main-section">
+        <header id="main-section-header">Lifecycle Methods</header>
+        <p>
+          In React, components have a lifecycle that goes through various stages
+          as they are rendered and updated. Lifecycle methods are special
+          methods that are called at specific points in a component's lifecycle,
+          and can be used to perform various tasks such as setting up the
+          initial state, fetching data, and updating the DOM.
+        </p>
+      </section>
+
+      <section id="React_Hooks" class="main-section">
+        <header id="main-section-header">React Hooks</header>
+        <p>
+          React Hooks are a relatively new feature in React that allow
+          functional components to have state and lifecycle methods. They were
+          introduced in React 16.8 as a way to simplify state management and
+          make it easier to reuse code across components. Hooks provide a way to
+          use stateful logic without the need for class components or
+          higher-order components.
+        </p>
+      </section>
+
+      <section id="Conditional_Rendering" class="main-section">
+        <header id="main-section-header">Conditional Rendering</header>
+        <p>
+          Conditional rendering is a feature in React that allows developers to
+          render different content based on certain conditions. It is useful
+          when you want to display different content based on user interactions,
+          data changes, or other factors.
+          <br />
+          In React, conditional rendering can be achieved using various
+          techniques such as if/else statements, ternary operators, and logical
+          && operators. These techniques allow developers to control what
+          content is rendered based on the state of the application.
+        </p>
+      </section>
+
+      <section id="Lists_and_Keys" class="main-section">
+        <header id="main-section-header">Lists and Keys</header>
+        <p>
+          Lists and Keys are important concepts in React that are used to render
+          dynamic lists of elements with unique identifiers. When rendering a
+          list of items, it's important to assign each item a unique key, so
+          that React can efficiently update the list when changes occur.
+        </p>
+      </section>
+
+      <section id="React_Router" class="main-section">
+        <header id="main-section-header">React Router</header>
+        <p>
+          React Router is a popular library used for client-side routing in
+          React applications. It allows developers to define multiple routes in
+          their application and render different components based on the URL
+          path. This makes it possible to create single-page applications with
+          multiple pages and a seamless user experience.
+        </p>
+      </section>
+
+      <section id="Redux" class="main-section">
+        <header id="main-section-header">Redux</header>
+        <p>
+          Redux is a state management library for JavaScript applications, and
+          it is commonly used in conjunction with React. Redux provides a
+          centralized store for managing the state of an application, making it
+          easier to manage and maintain complex data structures.
+        </p>
+      </section>
+
+      <section id="Conclusion" class="main-section">
+        <header id="main-section-header">Conclusion</header>
+        <p>
+          There are several JavaScript frameworks available for building web
+          applications, each with its own strengths and weaknesses. Two popular
+          frameworks that are often compared to React are Angular and Vue.
+          Angular, developed by Google, is a full-featured framework that offers
+          a comprehensive set of tools for building complex applications. Vue,
+          on the other hand, is a lightweight framework that emphasizes
+          simplicity and ease of use.
+        </p>
+        <p>
+          While these frameworks have their own advantages, React has emerged as
+          the most popular choice for building web applications. One reason for
+          its popularity is its component-based architecture, which makes it
+          easy to create reusable UI elements. Additionally, React's virtual DOM
+          allows for efficient rendering of changes to the UI, resulting in
+          faster and more responsive applications. Another factor contributing
+          to React's popularity is its large and active community, which
+          provides extensive support, documentation, and third-party libraries.
+        </p>
+        <p>
+          Overall, while other frameworks may have their merits, React's
+          combination of simplicity, efficiency, and community support make it
+          the best choice for building modern web applications.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

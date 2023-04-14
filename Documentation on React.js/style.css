@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+/* Nanum Gothic */
+
+:root {
+  font-family: "Nanum Gothic", sans-serif;
+  background: #e3fdfd;
+  font-size: 16px;
+}
+
+html::-webkit-scrollbar {
+  width: 18px;
+  background: #e3fdfd;
+  border-radius: 30px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #71c9ce;
+  border-radius: 20px;
+  border: 6px solid transparent;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #a6e3e9;
+}
+
+#navbar {
+  float: left;
+  width: 22%;
+  margin: 0;
+  padding: 0;
+  background: #cbf1f5;
+  border-radius: 15px;
+  position: fixed;
+}
+
+#navbar-header {
+  margin: 10px auto auto auto;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.nav-style {
+  text-decoration: none;
+  color: #393e46;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 20px 1px 20px 1px;
+  font-size: 1rem;
+  line-height: 2;
+  width: 100%;
+  height: 80vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+ul::-webkit-scrollbar {
+  width: 10px;
+  background: #e3fdfd;
+  border-radius: 30px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #71c9ce;
+  border-radius: 20px;
+  border: 6px solid transparent;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+  background-color: #a6e3e9;
+}
+
+#main-doc {
+  float: left;
+  width: 75%;
+  background: #cbf1f5;
+  border-radius: 15px;
+  margin: 0px 0 0 23%;
+  padding: 20px 15px 20px 15px;
+  font-size: 1rem;
+}
+
+#main-section-header {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 20px 10px 20px 10px;
+  color: #393e46;
+}
+
+p {
+  margin: 20px 20px 20px 20px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+@media (max-width: 650px) {
+  :root {
+    scroll-padding-top: 170px;
+  }
+  #navbar {
+    width: 100%;
+    margin: -10px 0 0 0;
+    padding: 0;
+    background: rgba(236, 236, 236, 1);
+    border-radius: 10px;
+    height: 164px;
+    position: fixed;
+  }
+  #navbar-header {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+    height: 20px;
+  }
+  .nav-style {
+    text-decoration: none;
+    color: black;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 1px 0 0 0;
+    font-size: 0.8rem;
+    line-height: 0.5;
+    width: 100%;
+    height: 120px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  #main-doc {
+    width: 100%;
+    background: rgba(238, 238, 238, 0.5);
+    border-radius: 10px;
+    margin: 160px 10px 0 0;
+    font-size: 0.7rem;
+  }
+}
